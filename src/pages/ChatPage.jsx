@@ -29,11 +29,11 @@ const ChatPage = () => {
   };
 
   return (
-    <div className="chat-page flex">
-      <div className="chat-list-container w-1/3">
+    <div className="chat-page flex h-screen">
+      <div className="chat-list-container w-1/3 fixed top-0 left-0 h-full bg-sidebar-bg overflow-y-auto">
         <ChatList onChatSelect={handleChatSelect} />
       </div>
-      <div className="chat-content-container w-2/3 flex flex-col">
+      <div className="chat-content-container flex-grow ml-[500px] flex flex-col bg-bg-color text-text-color overflow-y-auto">
         {selectedChatId && (
           <>
             <MessageList chatId={selectedChatId} messages={messages[selectedChatId] || []} />

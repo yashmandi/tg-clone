@@ -4,7 +4,7 @@ import ChatPage from './pages/ChatPage';
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="app bg-var(--bg-color) text-var(--text-color)">
       <ChatPage />
     </div>
   );

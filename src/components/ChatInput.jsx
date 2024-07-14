@@ -21,17 +21,17 @@ const ChatInput = ({ chatId, onSendMessage }) => {
   };
 
   return (
-    <div className="chat-input flex items-center p-4 bg-gray-200">
+    <div className="chat-input flex items-center p-4 bg-input-bg">
       <input
         type="text"
-        className="flex-grow p-2 rounded-lg border border-gray-300"
+        className="flex-grow p-2 rounded-lg border border-gray-300 bg-input-bg text-text-color"
         placeholder="Type a message..."
         value={message}
         onChange={handleInputChange}
         onKeyPress={handleKeyPress}
       />
       <button
-        className="ml-4 p-2 bg-blue-500 text-white rounded-lg"
+        className="ml-4 p-2 bg-button-bg text-button-text rounded-lg"
         onClick={handleSendMessage}
       >
         Send

@@ -1,24 +1,21 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* src/index.css */
-.chat-list {
-  @apply flex flex-col p-4 space-y-4;
+:root {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --sidebar-bg: #2a2a2a;
+  --message-bg: #323232;
+  --input-bg: #2a2a2a;
+  --button-bg: #1e90ff;
+  --button-text: #fff;
+  --message-sender: #00a0f0;
+  --message-receiver: #393939;
 }
 
-.chat-item {
-  @apply p-4 bg-gray-100 rounded-lg;
-}
-
-.message-list {
-  @apply flex flex-col p-4 space-y-4;
-}
-
-.message-item {
-  @apply p-4 bg-blue-100 rounded-lg;
-}
-
-.chat-content {
-  @apply flex flex-col flex-1;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }

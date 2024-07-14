@@ -32,7 +32,7 @@ const ChatList = ({ onChatSelect }) => {
   }
 
   return (
-    <div className="chat-list">
+    <div className="chat-list h-full overflow-y-auto">
       {chats.length === 0 ? (
         <div>No chats available</div>
       ) : (
